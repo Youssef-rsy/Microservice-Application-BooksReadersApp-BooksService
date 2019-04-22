@@ -8,12 +8,13 @@ import org.springframework.stereotype.Component;
 import com.github.javafaker.Faker;
 import com.local.ysf.BookService.Entity.Book;
 import com.local.ysf.BookService.Infrastructure.BookRepository;
+import com.local.ysf.BookService.service.BookService;
 
 //@Component
 public class dataSeed {
 
 	@Autowired
-	private BookRepository BookRepository;
+	private BookService bookService;
 	
 	
 	@PostConstruct
@@ -21,7 +22,7 @@ public class dataSeed {
 		Faker faker = new Faker();
 		for (int i = 0; i < 20; i++) {
 			Book book = new Book(faker.book().title(), faker.book().author(), faker.gameOfThrones().quote(),faker.number().randomDigit());
-			BookRepository.save(book);
+			bookService.saveBook(book);;
 		}
 	}
 }

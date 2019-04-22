@@ -10,6 +10,8 @@ import javax.persistence.Id;
 import org.hibernate.annotations.GenericGenerator;
 import org.hibernate.annotations.Type;
 
+import io.swagger.annotations.ApiModelProperty;
+
 @Entity
 public class Book {
 
@@ -18,10 +20,15 @@ public class Book {
     @GeneratedValue(generator ="UUID")
     @GenericGenerator(name="UUID",strategy = "org.hibernate.id.UUIDGenerator")
     @Column(name = "booksId", updatable = false, nullable = false)
+	@ApiModelProperty(notes="represent id of the Book mapped as booksId in the database ")
 	private UUID bookId;
+	@ApiModelProperty(notes="represent the title of the book")
 	private String title;
+	@ApiModelProperty(notes="represent the author who write the book")
 	private String author;
+	@ApiModelProperty(notes="represent the resumer of the book")
 	private String description;
+	@ApiModelProperty(notes="represent the author of pages in the book")
 	private int numberOfPage;
 
 	public Book() {
