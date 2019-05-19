@@ -1,4 +1,4 @@
-package com.local.ysf.BookService.Service;
+package com.local.ysf.BookService.service;
 
 import static org.junit.Assert.*;
 import static org.mockito.Mockito.atLeast;
@@ -20,6 +20,10 @@ import com.github.javafaker.Faker;
 import com.local.ysf.BookService.Entity.Book;
 import com.local.ysf.BookService.Infrastructure.BookRepository;
 import com.local.ysf.BookService.service.BookServiceImplementation;
+/**
+ * @author Youssef ROSSAMY
+ *
+ */
 @RunWith(MockitoJUnitRunner.class)
 public class BookServiceTestMock {
 

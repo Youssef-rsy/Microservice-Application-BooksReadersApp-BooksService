@@ -6,6 +6,10 @@ import java.util.UUID;
 import com.local.ysf.BookService.Entity.Book;
 
 
+/**
+ * @author Youssef ROSSAMY
+ *
+ */
 public interface BookService {
 
 	public void saveBook(Book book);

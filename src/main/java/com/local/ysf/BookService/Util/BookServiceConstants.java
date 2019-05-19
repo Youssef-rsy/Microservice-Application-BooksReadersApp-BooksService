@@ -1,5 +1,9 @@
 package com.local.ysf.BookService.Util;
 
+/**
+ * @author Youssef ROSSAMY
+ *
+ */
 public interface BookServiceConstants {
 
 	/**

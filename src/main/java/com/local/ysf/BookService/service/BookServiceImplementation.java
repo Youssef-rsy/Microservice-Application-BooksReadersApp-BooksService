@@ -13,6 +13,10 @@ import com.local.ysf.BookService.Entity.Book;
 import com.local.ysf.BookService.Infrastructure.BookRepository;
 import com.netflix.hystrix.contrib.javanica.annotation.HystrixCommand;
 
+/**
+ * @author Youssef ROSSAMY
+ *
+ */
 @Transactional
 @Service
 public class BookServiceImplementation implements BookService {

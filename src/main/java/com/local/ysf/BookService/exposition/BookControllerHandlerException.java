@@ -17,6 +17,10 @@ import com.local.ysf.BookService.Util.BookServiceExceptionFormat;
 import com.local.ysf.BookService.exposition.exception.InvalidData;
 
 
+/**
+ * @author Youssef ROSSAMY
+ *
+ */
 @ControllerAdvice(basePackageClasses={BookController.class})
 public class BookControllerHandlerException  {
 

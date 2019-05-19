@@ -25,6 +25,10 @@ import io.swagger.annotations.ApiOperation;
 import io.swagger.annotations.ApiResponse;
 import io.swagger.annotations.ApiResponses;
 
+/**
+ * @author Youssef ROSSAMY
+ *
+ */
 @RestController
 @RequestMapping("/book")
 @CrossOrigin(origins="*")
@@ -38,7 +42,7 @@ public class BookController {
 	@PostMapping(value="")
 	@ApiOperation(value = "Add New Book")
 	@ApiResponses( value= {
-			@ApiResponse(code=200, message = ""),
+			@ApiResponse(code=201, message = ""),
 			@ApiResponse(code=400,message="Invalid data:"),
 	})
 

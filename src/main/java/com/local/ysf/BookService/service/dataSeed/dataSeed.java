@@ -11,6 +11,10 @@ import com.local.ysf.BookService.Infrastructure.BookRepository;
 import com.local.ysf.BookService.service.BookService;
 
 //@Component
+/**
+ * @author Youssef ROSSAMY
+ *
+ */
 public class dataSeed {
 
 	@Autowired

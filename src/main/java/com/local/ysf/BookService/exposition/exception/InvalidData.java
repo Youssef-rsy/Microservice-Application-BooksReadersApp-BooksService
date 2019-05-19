@@ -1,5 +1,9 @@
 package com.local.ysf.BookService.exposition.exception;
 
+/**
+ * @author YOUSSEF ROSSAMY
+ *
+ */
 public class InvalidData extends Exception{
 
 	/**

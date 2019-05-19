@@ -9,6 +9,10 @@ import org.springframework.stereotype.Repository;
 
 import com.local.ysf.BookService.Entity.Book;
 
+/**
+ * @author Youssef ROSSAMY
+ *
+ */
 @Repository
 public interface BookRepository extends JpaRepository<Book, UUID>{
 
