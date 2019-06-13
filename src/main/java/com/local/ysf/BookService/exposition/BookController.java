@@ -31,7 +31,7 @@ import io.swagger.annotations.ApiResponses;
  */
 @RestController
 @RequestMapping("/book")
-@CrossOrigin(origins="*")
+//@CrossOrigin(origins="*")
 public class BookController {
 	
 	private static final Logger LOG = Logger.getLogger(BookController.class.getName());  
