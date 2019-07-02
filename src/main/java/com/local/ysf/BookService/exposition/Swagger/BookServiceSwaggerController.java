@@ -10,7 +10,7 @@ import org.springframework.web.bind.annotation.RequestMapping;
 @Controller
 public class BookServiceSwaggerController {
 	
-	 	@RequestMapping ("/swagger")
+	 	@RequestMapping ("/")
 	    public String home() {
 		return "redirect:/swagger-ui.html";
 	    }
